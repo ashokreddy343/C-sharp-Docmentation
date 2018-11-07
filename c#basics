@@ -1,0 +1,74 @@
+.NET
+    -Desktop applications
+    -web applications
+    -Mobile applications
+ Csharp
+  ->object oriented
+  ->Platform independent
+Constructor
+  -it is special method present under a class  responisble for initilizing the varibles of that class
+  -the name of a constructor method is exactly the same name of the class in which it was present
+  -it is a nov-value returing method
+  -each and every calss requires this constructor if we want to create the instance of that class.
+  -Implicitly defined constructors also known as default constructors.
+  -Imlicitly defined constructor are public
+  -we can also define a constructor under the class
+  Defining
+          -Implicit or Explicit
+  Calling 
+        -Explicit
+Types of Constructors
+  -Default or Parameter Less Constructor
+      If a constrcutor method does not take any parameter then we call that as default parameter   
+  -Parameterized Constructor
+      if a constructor method does take parameters it's called Parameterized constructos
+  -Copy Constructor
+    -if we want to create multiple instances with the same values then we use these copy constructors
+    -In a copy constructor the constructor takes the same class as a parameter to it
+  -Static Constructor
+    -if a constructor is explicitly declared by using static modifier we called that as static constructor
+    -if a class contains any static varibles then only implicit static constructors will be present or else
+     we need to define them explicitly where as non-static constructor will be implicitly defined in every calss
+    -static constructor are responsible in intializing static varibles and these constructors are never called explicitly
+    -static constructor can not be parameterized so overloading static constructor is not possible.
+    -it will be invoked only once for any number of instance the class
+    -you can create only one static constructor
+  -Private constructor
+    -private constructor is used to restrict the class from being inherited
+    -Used when class contains every member as static
+Why constructors are needed in our class
+    Every class requires a constructor to be present init if we want to create the instance of that class
+    what is the need of defining constructor explicitly ?
+      if we define constructors explicitly with parameters then we will get chang of initializing  the fields or varibles of the class
+      with a new value every time we are going to create instance of the class.
+static constructors and non static constructors
+  -static constructors are called implicitly whereas non-static constructors must be explicitly called
+  -static constructors executes immediately once the execution of a class starts and more over it's the first block of code to run under
+   a class whereas non static constructors are executed after creating the instance of the class as well as each and every instance of the 
+   class is created
+  -In the life cycle of a class static constructor executes one and only one time where as non-static constructor executes for
+   zero times if no instances are created  and  n times
+  
+  Class : it's a userdefined type
+  First f=new First(); //f is instance of class
+  First f;  //f is varible of class
+  f=new First(); //f is instance of class
+  Varible of class : A copy of class that is not initialized
+  Instance of class : A copy of class that is initialized by using the new keyword
+  
+   
+  
+        
+  
+
+
+
+
+
+
+
+
+    
+  
+  
+  
