@@ -55,8 +55,25 @@ static constructors and non static constructors
   f=new First(); //f is instance of class
   Varible of class : A copy of class that is not initialized
   Instance of class : A copy of class that is initialized by using the new keyword
-  
-   
+                      which has its own memory and never shared with another instance
+  Reference of class:a copy of the class that is initialized by using existing instance
+                     and references of class will not have any memory allocation they wiil
+                     be sharing the same memory of the instance that is assigend for initialization
+  First f1=new First(); // f1 is a instance of class
+  First f2=f1; //f2 is a reference of a class
+
+Access Specifiers
+    it is special kind of modifiers using which we can define the scope of a type and it's members.
+    private:private members only be accessed within the class that contains them
+    internal:can only be accessed from the current project
+    protected:can be accessed from a containg class and types inherited from the containg class
+    protected internal: the same class or same assembly(same project),or within any class derived from the elements class
+    public:anywhere in the application
+Different kinds of varibles
+    Non-Static
+    Static
+    constants
+    ReadOnly
   
         
   
