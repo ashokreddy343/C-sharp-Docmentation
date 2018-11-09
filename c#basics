@@ -74,6 +74,44 @@ Different kinds of varibles
     Static
     constants
     ReadOnly
+Different kinds of varibles in a class
+	1.Non-static
+		-if a varible is explicitly declared by using the static modifier or else 
+		  if a varible is declared under any static block then those varibles are static
+		  where as rest of the others are non-static
+		-static members of a class doesn't require the instance of class for initialization or
+		  execution also
+		-in the life cycle of a class static varible is initialized one
+		  and only one time,whereas instance varibles initialized for 0 times
+		  if no instance are created and n times if n instances are created
+	2.static
+	3.Constants
+		-if a varible is declared by using the keyword "cosnt" we call it as constant varible
+		 and these constanct varibles can't be modified once after their declaration,so its
+		 must to initialize constant varibles at the time declaration only
+		-the behaviour of constant varibles will be similar to the behaviour of static varibles
+		  i.e initialized one and only one time in the life cycle of a class and does not require
+		      the instance of class for accessing or intializing
+	4.ReadOnly
+		-if a varible is declared by using the readonly keyword we call that varibles as a readonly
+	 	 varible and these varibles also can't be modified like constant but after initalization
+		-The behaviour of readonly varibles will be similar to the behaviour of non-static varibles
+-the only difference between a static and constant varibles is static varibles can be modified whereas constant 
+ varibles can't be modified
+
+-the only difference between readonly and non-static varibles is non-staic varibles can be modified but not readonly varibles
+
+-Constant varibles is a fixed value for the whole clas where as readonly varibles is fixed value specific to an
+ an instance of class
+
+Inheritance
+	-it is a mechanism of cosnuming the members of one classs in another class by establishing 
+	 parent/child relationship between the classes
+	-it provides re-usability
+	-Parent or Base or super
+	-Child or Derived or Sub
+	-1.Parent classes constructor must be accessible to child class,otherwise will not be possible
+
   
         
   
