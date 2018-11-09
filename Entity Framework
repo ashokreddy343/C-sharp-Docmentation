@@ -1,0 +1,25 @@
+what is EF ?
+	EF is an ORM framework.ORM stands for object realational Mapping
+What is ORM ?
+	ORM framework automatically creates classes based on database tables,and the vice versa is also true
+	it can also automatically generate necessary SQL to create database tables based on classes.
+Schema First
+Model First
+Code First
+
+Model First
+Code First
+	Code-first approach allows us to create our custom classes first
+	and based on those classes enittiy framework can generate database
+	automatically for us.
+ForeignKey("Department")] it's avalible System.ComponentModel.DataAnnotations.schema
+
+How to handle model changes in entity framework
+	By Default,an error will be thrown if the model changes after database is created
+	This is because the Model and Database are no longer in sync.
+	To check if the model has changed since the database was created.
+	Ef is used _migration history table that is auto generated
+How to handle model changes
+	To fix this error,we have to tell ef what to do when the model changes
+global.asax
+	Database.SetInitializer(new DropCreateDatabaseIfModelChanges<EmployeeDbContext>());
