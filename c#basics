@@ -111,7 +111,61 @@ Inheritance
 	-Parent or Base or super
 	-Child or Derived or Sub
 	-1.Parent classes constructor must be accessible to child class,otherwise will not be possible
+Which statements are true for an int/Integer built in .NET data type?
+	It supports bitwise operators.
+	The ToString method can be used for formatting a numerical value.
 
+A class inherits a base class and it overrides a method from that base class.
+Select all possible forms of the base class and its method:
+	The base class can be abstract in C# (MustInherit in Visual Basic)
+	The method from the base class can be abstract in C# (MustOverride in Visual Basic).
+	The method from the base class can be virtual in C# (Overridable in Visual Basic).
+	The method in the overriding class must have the override (Overrides in Visual Basic).
+
+What is Polymorphism.explain diff types ?
+	Ability to take more than one form is called polymorphism.
+	overloading-compiletime/design time :the method will have same name but diff parameters
+	overriding-Runtime : it's achieved by virtual and override keywords
+What is method overloading ?
+	Having different methods with same name but different parameters in a single class called method overloading
+	a)diff no of parameters
+		public void method(int a)	
+		public void method(int a,int b)
+	b)diff types of parameters
+		public void m1(int a)
+		public void m1(float a)
+	c)diff order of parameters
+		public void m1(int a,float b)
+		public void m1(float b,int a)
+Advantages of polymorphism 
+	a)invoking child class functions dynamically
+	b)maintance of code become easy
+Inheritance
+	1.parent classes constructor must be accessible to child class,otherwise inheriance not possible
+	2.child class can access parent class members but parent classes can never access any member that
+	  is purely defined under the child classes
+	3.we can initialize a parent classes varible by using the child class instance
+	  to make it as a reference 
+		ex:class1 p; //p is a varible of Class1
+		   class2 c=new class2(); // c is instance of class2
+		   p=c; p is instance of parent class created by using child class instance
+		reference of a class will not have any memory allocation
+	Every class contains by default 4 methods
+		1.Equals 2.GetHashCode 3.GetType 4.ToString
+	Every class default parent class is Object(it's available in System namespace)
+Types of Inheritance
+	single
+	multi-level
+	Hierarchical
+	Hybrid
+	Multiple
+Entity
+	it's a living or non-living object as set of attributes
+Method Overloading
+Metod overriding	
+	1.It's an approach of re-implementing a parent classes method under the child with the same signature
+	2.in this case we define multiple methods with same name and same parameters
+	3.This can be performed only between parent and child classes can never be performed with in the same class
   
         
   
