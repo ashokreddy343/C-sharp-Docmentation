@@ -1,0 +1,70 @@
+1.Using Generics With C#
+	1.Generics available System.Collection.Genric namespace
+	Boxing
+		valuetype to reference type
+		int a=20;
+		object b=a;
+	Unboxing 
+		refrence type to value type			
+		int c=(int)b;
+	Generic Classes
+		public class TestClass<T>{}
+	Generic features
+		Type Safety
+		Performance
+			Generics are faster than other collections such as ArrayList.
+		Binary Code reuse
+2.Overview Of Abstract Class And Interface
+What is an abstract class ?
+	1.A class with the abstract modifier indicates that it is an abstract class
+	2.An abstract class cannot be instantiated. 
+	3.The purpose of an abstract class is to provide a common definition of a base class that multiple derived classes can share
+Features of an abstract class
+	1.An abstract class cannot be instantiated
+	2.An abstract class may contain abstract methods and accessors.
+	3.An abstract class cannot be sealed. The sealed modifier prevents a class from being inherited.
+	4.An abstract class requires to be inherited
+	5.A non-abstract class derived from an abstract class must include actual implementations of all inherited abstract methods and accessors
+What are abstract methods?
+	1. Abstract methods have no implementation
+	2.Derived classes of the abstract class must implement all abstract methods.
+	public abstract void MyMethod();  
+Features of an abstract method
+	1.An abstract method is implicitly a virtual method.
+	2.Abstract method declarations are only permitted in abstract classes.
+When to use Abstract class in c# ?
+
+	1.In various implementations, if they are of the same kind and use common behavior or status, then an abstract class is better to use.
+What is an interface?
+	An interface is a contract that contains only the declaration of the methods, properties, and events, but not the implementation.	
+	The Interface makes it easy to maintain a program.
+Features of interface
+	An Interface contains only the signature of methods
+	An Interface has no Implementation on its own
+	An Interface is used to implement multiple inheritances in code.
+	It defines a static set of methods and their arguments
+	Variables in Interface must be declared as public, static and final
+	Methods in an Interface must be declared as public and abstract
+	A class implementing an Interface must implement all of its methods
+	An Interface can derive from more than one Interface
+Advantages of interface
+	Interfaces facilitate parallel application development.
+	They are great for implementing Inversion of Control or Dependency Injection.
+	Interfaces enable mocking for better unit testing.
+	Interfaces allow us to develop very loosely coupled systems.
+	Interfaces also allow us to implement polymorphic behavior.
+When to use interface ?
+	If various methods share only methods signature, then it is better to use interface. The interface allows multiple inheritances.
+What is the difference between abstract class and interface?
+Abstract class
+	1.Abstract classes can have implementations for some of its members
+	2.An abstract class can have fields
+	3.An abstract class can inherit from another class or another interface.
+	4.A class cannot inherit from multiple classes at the same time
+	5.Abstract class members can have access modifiers
+Interface
+	1.An interface can’t have an implementation for any of its members
+	2.Interfaces cannot have fields
+	3.An interface can inherit from another interface only and cannot inherit from any class.
+	4.A class can inherit from multiple interfaces at the same time
+	5.Interface members cannot have access modifiers. It is by default public.
