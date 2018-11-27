@@ -1,3 +1,4 @@
+
 1.Using Generics With C#
 	1.Generics available System.Collection.Genric namespace
 	Boxing
@@ -68,3 +69,95 @@ Interface
 	3.An interface can inherit from another interface only and cannot inherit from any class.
 	4.A class can inherit from multiple interfaces at the same time
 	5.Interface members cannot have access modifiers. It is by default public.
+1.C# Coding Standards And Naming Conventions
+Terminology
+	Camel Case (camelCase): In this the first letter of word always in small letter and after that each word with capital letter
+	Pascal Case (PascalCase): In this the first letter of every word is in capital letter.
+	Underscore Prefix (_underScore): For underscore ( __ ), the word after _ use camelCase terminology.
+	
+	Private field   _lowerCamelCase
+	Public filed    UpperCamelCase
+	Protected field UpperCamelCase
+	Internal field  UpperCamelCase
+	Property	UpperCamelCase
+	Method		UpperCamelCase
+	Class		UpperCamelCase
+	Interface     	IUpperCamelCase
+	Local Varibles 	lowerCamelCase
+	Parameter	lowerCamerlCase
+	ex:private int _salary;
+2.Types of Classes in C#
+What is a Class
+	1.Classes are the user defined data types that represent the state and behaviour of an object.		
+	2.Classes are reference types that hold the object created dynamically in a heap.
+	3.All classes have a base type of System.Object.
+	4.The default access modifier of a class is Internal
+	5.The default access modifier of methods and variables is Private.
+1.Abstract
+	1.An Abstract class is a class that provides a common definition to the subclasses and this is the type of class whose object is not created
+	2.An Abstract class contains both abstract and non-abstract methods.
+	3.Methods inside the abstract class cannot be private
+	4.If there is at least one method abstract in a class then the class must be abstract.
+2.Partial
+	1.It is a type of class that allows dividing their properties, methods and events into multiple source files and at compile time these files are combined into a single class.
+	2.All the parts of the partial class must be prefixed with the partial keyword.
+	3.Inheritance cannot be applied on partial classes.
+	4.The classes that are written in two class files are combined together at run time.
+3.Sealed 
+	1.A Sealed class is a class  that cannot be inherited and used to restrict the properties. 
+	2.A Sealed class is created using the sealed keyword
+	3.Access modifiers are not applied to a sealed class
+	4.To access the sealed members we must create an object of the class.
+4.Static
+	1.It is the type of class that cannot be instantiated
+	2.in oher words we cannot create an object of that class using the new keyword
+	3.Inside a static class only static members are allowed, in other words everything inside the static class must be static.
+	4.We cannot create an object of the static class.
+	5.A Static class cannot be inherited.
+	6.It allows only a static constructor to be declared.
+		
+3.Parallel.ForEach() vs Foreach() Loop in c#
+	Foreach loop
+		1.Foreach loop runs upon a single thread and processing takes place sequentially one by one.
+		2.Its execution is slower than Parallel.Foreach in most of the cases.
+	Parallel.ForEach loop
+		1.Parallel.ForEach loop runs upon multiple threads and processing takes place in a  parallel way
+		2.it is available from C# 4.0 and above
+		3.To use Parallel.ForEach loop we need to import System.Threading.Tasks namespace in using directive.
+	bulk task inside the foreach loop then parallel.foreach is very fast 
+	iterating and doing a very little task inside loop then go for traditional for loop. 
+
+4.Method Overloading And Method Overriding In C#
+	1.Polymorphism means “Many Forms
+There are two types of Polymorphism
+	1.Method Overloading
+	2.Method Overriding
+Method Overloading
+	1.Method Overloading is a type of polymorphism
+	2.some times you say compile time,static,early binding
+	3.Method Overloading means creating multiple methods in the class having same name but different signatures (Parameters). 
+	4.It permits a class, struct, or interface to declare multiple methods with the same name with unique signatures.
+Method Overriding
+	1.Method Overriding is a type of polymorphism
+	2.Somtimes you say Run time,Dynamic,Late Binding
+	3.Method Overriding means having two methods with same name and same signature [parameters], one should be in base class and other method should be in derived class [child class]
+	4.Virtual and Override keywords are used to achieve method overriding.		
+	Points to be remebered
+		1.Method cannot be private
+		2.Only abstract or virtual method can be overridden
+		3.which method should be called,it decides on run time.	
+4.Difference Between Array And ArrayList In C#
+Array
+	1.An Array is a collection of data items of the same type
+	2.An Array is reference type so memory for the array is allocated on the heap. 
+	 ex: string[] array1=new string[5];  
+	3.array has a fixed size
+	4.The array provides better performance than the ArrayList because an array stores the same type of data which doesn't need unnecessary boxing or unboxing.
+	5.In an array we cannot store null.
+	6.Array stores a fixed number of elements.
+ArrayList
+	1.ArrayList is a non-generic collection type. 
+	2.If we are using a large number of ArrayList then it degrades performance because of boxing and unboxing
+	3.ArrayList implements an IList interface so, it provides a method that we can use for easy implementation.
+	4.ArrayList belongs to namespace System.Collection
+	5.ArrayList can accept null
