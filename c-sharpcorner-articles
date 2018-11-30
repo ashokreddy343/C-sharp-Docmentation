@@ -94,7 +94,8 @@ What is a Class
 	4.The default access modifier of a class is Internal
 	5.The default access modifier of methods and variables is Private.
 1.Abstract
-	1.An Abstract class is a class that provides a common definition to the subclasses and this is the type of class whose object is not created
+
+1.An Abstract class is a class that provides a common definition to the subclasses and this is the type of class whose object is not created
 	2.An Abstract class contains both abstract and non-abstract methods.
 	3.Methods inside the abstract class cannot be private
 	4.If there is at least one method abstract in a class then the class must be abstract.
@@ -161,3 +162,36 @@ ArrayList
 	3.ArrayList implements an IList interface so, it provides a method that we can use for easy implementation.
 	4.ArrayList belongs to namespace System.Collection
 	5.ArrayList can accept null
+
+1.What Is Static Method And Instance Method In C#
+static method
+	1.Static method is defined with the static keyword
+	2.Static method is called by its class name
+	3.We can’t use this keyword inside the Static Method
+	4.Static Method uses the memory of Class
+Non Static Method
+	1.Non Static Method is defined without static keyword.
+	2.Non Static Method is called by making the object of a class
+	3.We can use thiskeyword inside Non Static Method
+	4.Non Static Method uses a memory of an object
+2.C# Singleton DesignPattern
+	Singleton
+		1.Singleton allows creating only one object to a calss and this
+	  	  restricted to one instance provides a global point of access to it
+		Advantages
+			1.it supports lazy loading
+			2.support of static initialization
+			3.It has a single point of access to a particular instance and it is very easy to maintain.
+		Disadvantages
+			1.This pattern does not support parallelism within a program
+			2.because there is no multi-threaded system access in the singleton pattern and an object must be serialized by locking.
+3.Dependency Injection in C#
+	1.Dependency Injection (DI) is a software design pattern
+	2.It allows us to develop loosely-coupled code
+	3.The intent of Dependency Injection is to make code maintainable
+	4.Dependency Injection helps to reduce the tight coupling among software components.
+	5.Constructor Injection
+		a)This is the most commonly used dependency pattern in Object Oriented Programming
+	6.Property Injection
+	7.Method Injection
+	
