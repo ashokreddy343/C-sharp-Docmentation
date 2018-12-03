@@ -1,0 +1,40 @@
+1.Remove Duplicate characters from String in C#
+Input: Csharpstar
+Output: Csharpt	
+//Rextester.Program.Main is the entry point for your code. Don't change it.
+//Compiler version 4.0.30319.17929 for Microsoft (R) .NET Framework 4.5
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+namespace Rextester
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            var result=RemoveDuplicateChars("GoOgle");
+            Console.WriteLine(result);
+            //this is another way 
+            string key="GGoOgle";
+            string result1=new string(key.ToLower().Distinct().ToArray());
+            Console.WriteLine(result1);
+        }
+        static string RemoveDuplicateChars(string key)
+        {
+            string table="";
+            string result="";
+            foreach(char value in key)
+            {
+                if(table.IndexOf(value)==-1)
+                {
+                    table+=value;
+                    result+=value;
+                }
+            }
+            return result;
+        }
+    }
+}
