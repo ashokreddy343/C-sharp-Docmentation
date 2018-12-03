@@ -1,0 +1,22 @@
+Part 1 - C# Tutorial - Introduction
+	Purpose of Main() method - Main method is the entry point into your application
+Part 2 - C# Tutorial - Reading and writing to a console 
+Part 3 - C# Tutorial - Built-in types 
+	1.Boolean type - Oly true or false
+	2.Integral Types -sbyte,byte,short,ushort,int,unint,long,ulong,char
+	3.Floating Types - float and double
+	4.Decimal Types
+	5.String Type
+Part 4 - C# Tutorial - String type 
+Part 5 - C# Tutorial - Common Operators 
+	1.Assignment Operator=
+	2.Arithmetic Operators like +,-,*,/,%
+	3.Comparison Operators like ==, !=,>, >=, <, <= 
+	4.Conditional Operators like &&, ||
+	5.Ternary Operator ?:
+	6.Null Coalescing Operator ??  
+Part 6 - C# Tutorial - Nullable Types 
+	1.Value Types  - int, float, double, structs, enums etc
+	2.Reference Types – Interface, Class, delegates, arrays etc
+	nullable types
+		int? j=0(j is nullable)
