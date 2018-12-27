@@ -167,7 +167,19 @@ Metod overriding
 	2.in this case we define multiple methods with same name and same parameters
 	3.This can be performed only between parent and child classes can never be performed with in the same class
   
-        
+Object
+	1.An Object in an instance of a Class
+	2.Technically, it is just a block of memory allocated that can be stored in the form of Variables, 
+	  Array or a Collection
+What are the fundamental OOP concepts?
+	1.Encapsulation 
+		a)The Internal representation of an object is hidden from the view outside object’s definition
+		b)Only the required information can be accessed whereas the rest of the data implementation is hidden.
+		c)Encapsulation means that a group of related properties, methods, and other members are treated as a
+		  single unit or object.
+		d)Encapsulation is used hide the member function, variable, etc. to the outside world.
+	2.Abstraction
+		a)
   
 
 
