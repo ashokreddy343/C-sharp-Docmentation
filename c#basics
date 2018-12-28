@@ -180,6 +180,92 @@ What are the fundamental OOP concepts?
 		d)Encapsulation is used hide the member function, variable, etc. to the outside world.
 	2.Abstraction
 		a)
+Class and objects are the fundamental concept of OOP(Object Oriented Programming)	
+Class
+	1.A class is a like a blue print
+	2.What is a blueprint ?
+		a)The same as for a blueprint class is an outline of a program.
+		b)Using the class we can write our own method and declare the varibles
+		  and using the objects
+		c)The class will be complete with varibles,methods and objects
+class AshokHouseClass1
+{
+}
+Objects
+	1.Objects are an instance of a class
+	2.To access all the class's method and varibles we use objects
+	3.We can create one or more objects for the same class
+	ex:AshokHouseClass1 objHouseOwner=new AshokHouseClass1();
+Varible
+	1.Variables are used to store our values.
+	2.Our value can be numeric or text
+	3.Varibles can be local or global
+	4.If we declare the varible as global then all the methods inside
+	  the class can access the varible
+	5.Syntax
+		Access-Modifier Data-Type Varible-Name
+	6.By default the access modifiers are private,we can also use public for a varible
+Method or Functions
+	1.A method is a group of code statements.
+	2.For OOP we call it as mehtods
+	3.non-OOP like "C" we call it as functions
+Polymorphism 
+	1.We can create more than one method with the same name but different parameters
+Encapsulation
+	1.Encapsulation hides the members or varibles from outside the class.
+	2.The hiding and limitation are called Encapsulation
+Abstraction
+	1.Abstraction shows to and shares some common information with the user.
+	2.In our house we will have servant.servants can go to all rooms and do
+	  cleaning and other work.
+	3.The house owner can give full right or some partial rights to the
+	  servant for accessing his house.
+Inheritance
+	1.Inheritance is used to reuse the code.
+	Single level Inheritance
+		With one base class and one derived class
+	Multi level Inheritance
+		1.With more than one derived class 
+		2.DerivedClass1 inherits baseclass
+		3.DerivedClass2 inherits DerivedClass1
+	Multiple Inheritance
+		1.In C# ,it's not possible to use Multiple Inheritance in a class
+		2.more than one class and we can inherit both classes in our derived class
+		3.Interface will be used for Multiple Inheritance
+Polymorphism
+	1.Poly means more than one form .
+	2.The same mehtod name with different a different parameters is 
+	  an example of polymorphism
+	Method Overloading and Method Overriding will be used in polymorphism
+	Method Overloading-Compile time Polymorphism
+		1.Method Overloading is nothing but the same method name used for more
+	  	  than one method with different arguments
+	Method Overriding-Run time Polymorphism
+		1.Method Overriding we will have the same Method Name and same argument
+		  and same type but overriding can only be used in the derived class
+		2.Method Overriding cannot be done in the same class
+Abstract Class/Method
+	1.Abstract Class :An Abstract class will have the keyword abstract
+	2.The Abstract class will be a super class for all our classes.
+	3.An Abstract class cnanot be accessed by an object.That menas we cannot
+	  create an object for an abstract class
+	4.An Abstract class can have both an Abstract Method and a normal method
+	5.In an Abstract class at least one Abstract method should be declared
+	6.The derived class should override the abstract method
+Virtual Class/Method
+Sealed Class/Method
+	1.As the name indicates,this cannot be inherited by other classes
+	2.A Sealed class can be declared using the Keyword sealed.
+	  If one class is declared Sealed,it cannot be inherited in other derived classes
+	3.If we declare a method as sealed then that specific method cannot be overriden
+	  in the derived class
+	4.The virtual method can be overriden in the derived class.but the Virtual sealed 
+	  method cannot be overriden in the sealed class
+Static Class/Method
+	1.But for a Static class it's not possible to create an Object
+	2.Static class only Static members are allowed.
+	3.That means in a static class it's not possible to write non-static methods
+	4.Memory will be allocated for all static varibles and methods during executinon		
   
 
 
