@@ -1,0 +1,23 @@
+1.C# Fundamentals with Visual Studio 2015
+	An Introduction to C# and .NET
+		.NET
+			1..NET is a software framework
+			2.CLR
+			3.FCL
+		CLR-Common Language Runtime
+			1.the CLR manages your application
+				-Memory management
+				-Operating system and hardware independence
+				-Language independence
+		The Framework
+			1.FCL-Framework class library
+				-A library of functionality to build applications
+		C#
+			1.One of many languages for .NET
+			2.Syntax is similar to Java,C++,and Javascript
+		The compiler
+			1.csc.exe
+			2.
+	Classes and Objects
+		Constructors
+			Special methods used to initialize objects
