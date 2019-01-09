@@ -1,0 +1,32 @@
+Static Types as using
+	1.we can get rid of the qualifiers just by importing the static types in the namespace like below
+	2.using static System.Console
+	3.using static NewInCSharp.MySelf;	
+
+String Interpolation
+	1.WriteLine($"{planet} is actually named after {name}");
+
+Dictionary Initializers
+	1. Dictionary<string, string=""> alien = new Dictionary<string, string="">()
+            {
+                ["Name"] = "Fizzy",
+                ["Planet"] = "Kepler-452b"
+            };
+
+
+Auto-Property Intializers
+	1.public string Name { get; } = "Sammy Jenkins"
+	2. public decimal Salary { get; set; } = 10000;
+
+nameof expression
+	1.throw new Exception(nameof(number) + " is null");
+
+Await in catch/finally block
+
+Null conditional Operator & Null Propagation
+	1.hero?.SuperPower ?? "You aint a super hero."
+Expression Bodied Function & Property
+	1. private static double AddNumbers(double x, double y) => x + y;
+Static using with Extension Methods
+
+Exception Filtering
