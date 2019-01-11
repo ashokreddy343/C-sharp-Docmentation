@@ -1,0 +1,69 @@
+Interfaces
+	1.Interfaces in C # provide a way to achieve runtime polymorphism
+	2.Using interfaces we can invoke functions from different classes through the same Interface reference	
+	3.Interfaces in C# cannot contain fields i.e variables
+		interface abc{int x;} //we will get above error
+	4.interface members cannot have a defination
+	5.Interfaces in C# can only contain function declarations
+	6.Interfaces are contracts that a class implements in its own way
+	7.we have two different classes implementing the same interface 
+	8.for fully qualified name doesn't require access specifier
+	9.interfaces support inheritance
+	10.https://www.codeproject.com/Articles/18743/%2FArticles%2F18743%2FInterfaces-in-C-For-Beginners
+	11.An Interface is a collection of properties and methods declarations.
+	Interfaces can contain any of the following type members or a combination of these four member types.
+		1.Property
+		2.Method
+		3.Event
+		4.Indexer
+	12.An Interface can be declared as either public or internal inside a
+	   namespace and can’t have any other access modifiers
+	13.Members of an Interface are public by default and can’t have other access modifiers
+	Types of interface implementations
+		1.Implicit 2.Explicit
+	14.Difference between explicit and implicit implementations
+		Implicit Implementation
+			1.Members are public by default
+			2.Members must be marked as public.
+			3.Members can be invoked directly through the object of the implementing class
+			4.FileSystemLogger objFileSystemLogger = new FileSystemLogger();
+			  objFileSystemLogger.WriteLog("");
+		Explicit implementation
+			1.Members are private by default.
+			2.Members can't have any access modifiers.
+			3.Members can't be accessed directly, an object of the implementing class should 
+				be cast to the Interface type to access the members.
+			4.FileSystemLogger objFileSystemLogger = new FileSystemLogger();
+				ILogger objLogger = (ILogger)objFileSystemLogger;
+				objLogger.WriteLog("");
+		 Using an Interface is a good approach to write maintainable and reusable code in C#
+		 Interface helps in defining a common functionality across multiple types
+		 Why Interface methods cannot have access modifiers ? 
+			Interface methods are always public by default
+		Can you create instance of an interface ?
+			No you cannot create an instance of interface
+		When should we Abstract Class and Interface?
+			1.If multiple versions of the component are being created and they are reused 
+			  then use abstract class
+			2.By updating base class all the derived  classes gets updated
+			3.whearas if a new version of interface is required it has to be created from scratch.
+				ex:Ilogger
+			4.Use interface if there are atleast 2 diff implementations available
+			5.If you want to provide common functionality among all the implemented 
+			  classes go for abstract classes.
+	15.Explicit interface method can now be accessed only through interface instance.
+	16.They are useful in cases when a class inherits two interfaces and both of  
+	   them have same method name
+	17.Why public modifier not used in explicit implementation? 
+		1.The methods which are explicitly implemented are tied to a interface. and it can be 
+		   accessed  only through interface reference
+	18.Does structure support Inheriting from an interface ?
+		yes
+	19.Can Interface inherit another interface ?
+		yes
+	20.Can interface inherit another class ?
+		interface cannot inherit another class
+	21.Can interface have access modifier?
+		yes
+	22.Mention some interface in.Net framework ?
+		Idisposable,IEnumerable,ICollection
