@@ -1,0 +1,18 @@
+ILDASM
+		1.IL roundtripping with ILASM(textual alnguage for IL)
+	.NET Reflector
+		-Built by Red Gate
+		-Decompiler of IL into C#,Visual Basic etc
+	ILSpy
+		-Open source alternative to .NET Reflector
+	Go to project folder type like below
+		ildasm.exe hello.exe
+		ildasm /out=hello.il hello.exe
+	Inspecting Runtime State
+		1.State of your program(C#)
+		2.Underlying data structrues of the runtime(CLR)
+	Native code Debugger
+		Debugging tools for windows download
+		WinDbg.exe and cdb.exe
+		SOS,PSSCOR4,SOSEX,CLRMD debugger extensions
+		cdb.exe hello.exe
