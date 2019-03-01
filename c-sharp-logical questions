@@ -66,3 +66,15 @@ int num1,num2,temp;
 		num2=temp;//10
 		Console.WriteLine(num1);
 		Console.WriteLine(num2);
+Question 1: Exchange Two integer variable value without using third variable
+	int a = 10;
+            int b = 5;
+            WriteLine($"a={a}");
+            WriteLine($"b={b}");
+            a = a + b;//10+5=15;
+            b = a - b;//15-5=10;
+            a = a - b;//15-10;5
+            WriteLine($"a={a}");
+            WriteLine($"b={b}");
+	    
+
