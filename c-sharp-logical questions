@@ -78,5 +78,20 @@ Question 1: Exchange Two integer variable value without using third variable
             a = a - b;//15-10;5
             WriteLine($"a={a}");
             WriteLine($"b={b}");
+
+Gets a Number and Display the Sum of the Digits
+	   int num, sum = 0, r;
+            WriteLine("Enter a number");
+            num= Convert.ToInt32(ReadLine());  //123
+            while (num != 0) 
+            {
+                r = num % 10; 
+                num = num / 10;  
+                sum = sum + r; 
+            }
+            WriteLine($"Sum of digitis of the number:{sum}"); // 1+2+3=6
+            ReadLine();
+
+
 	    
 
