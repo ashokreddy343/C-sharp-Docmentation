@@ -91,7 +91,17 @@ Gets a Number and Display the Sum of the Digits
             }
             WriteLine($"Sum of digitis of the number:{sum}"); // 1+2+3=6
             ReadLine();
+C# Program to Get a Number and Display the Number with its Reverse
 
-
+int num, rev = 0;
+            WriteLine("enter a number");
+            num = Convert.ToInt32(ReadLine()); //132  231
+            while (num != 0)
+            {
+                rev = rev * 10; 
+                rev = rev + num % 10; //2
+                num = num / 10;
+            }
+            WriteLine($"Reverse a number:{rev}");
 	    
 
