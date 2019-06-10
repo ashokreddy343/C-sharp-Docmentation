@@ -104,4 +104,34 @@ int num, rev = 0;
             }
             WriteLine($"Reverse a number:{rev}");
 	    
+Print given number is prime number or not 
+	int num;
+	WriteLine("Enter a number");
+	num=Conver.ToInt32(ReadLine());
+	int k=0;
+	for(int i=1;i<=num;i++)
+	{
+	  if(num%i==0)
+	  {
+	   K++;
+	   }
+	 }
+	 if(k==2)
+	 {
+	 WriteLine($"Entered number is prime:{num}");
+	 }
 
+C# Program to Check Whether the Entered Year is a Leap Year or Not
+	When A year is divided by 4. If the remainder becomes 0 then the year is called a leap year.
+	 int num;
+            WriteLine("Enter the year four digits");
+            num = Convert.ToInt32(ReadLine());
+            if((num%4==0 && num%100!=0)|| (num % 400 == 0))
+            {
+                WriteLine($"{num} is a leap year");
+            }
+            else
+            {
+                WriteLine($"{num} is not a leap year");
+            }
+            ReadLine();
