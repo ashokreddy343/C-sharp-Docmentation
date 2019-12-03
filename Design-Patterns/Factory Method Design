@@ -1,0 +1,21 @@
+Factory Method Design Pattern - C#
+	1.The factory method design pattern abstract the process of object 
+	  creation and allows the object to be created at run-time when it is required.
+	2.Factory method pattern falls under Creational Pattern of Gang of Four (GOF) 
+	  Design Patterns in .Net.	
+	3.It is used to create objects
+	4.People usually use this pattern as the standard way to create objects.
+
+What is Factory Method Pattern?
+	1.In Factory pattern, we create the object without exposing the creation logic
+	2.In this pattern, an interface is used for creating an object, 
+	  but let subclass decide which class to instantiate
+	3.The creation of object is done when it is required.
+	4.The Factory method allows a class later instantiation to subclasses.
+	5.In short, factory method design pattern abstract the process of object 
+	  creation and allows the object to be created at run-time when it is required
+When to use it?
+	1.Subclasses figure out what objects should be created
+	2.Parent class allows later instantiation to subclasses means
+	  the creation of an object is done when it is required	
+	3.The process of objects created is required to centralize within the application
