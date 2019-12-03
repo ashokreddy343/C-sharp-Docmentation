@@ -1,0 +1,50 @@
+What Design Patterns Are
+	1.General and reusable solutions to common problems in software design
+	2.Not a finished solution
+	3.A template or recipe for solving certain problems
+	4.With names to identify them
+	Patterns deal with
+		a.Application and system design
+		b.Abstraction on top of code
+		c.Relationships between classes or other collaborators
+		d.Problems that have already been solved
+	Patterns are not concerned with
+		a.Algorithms
+		b.Specific implementations or classes
+Creational Patterns
+	1.These patterns deal with the process of objects creation 
+	  in such a way that they can be decoupled from their implementing system
+	2.This provides more flexibility in deciding which objects need to be created 
+	  for a given use case/ scenario. 
+		1.Abstract factory
+		2.Builder
+		3.Factory method
+		3.Prototype
+		4.Singleton
+		5.Lazy Instanitiation
+		6.Utility pattern
+Structural Patterns
+	1.Adapter
+	2.Bridge
+	3.Composite
+	4.Decorator
+	5.Facade
+	6.Flyweight
+	7.Proxy
+Behavioral Patterns
+	1.chain of resp
+	2.command
+	3.Interpreter
+	4.Mediator
+	5.Memento
+	6.Observer
+	7.State
+	8.Strategy
+	9.Template method
+	10.visitor
+Why design pattern matter
+	1.give our profession a shared language
+	2.Helps avoid re-inventing constantly
+	3.Provide a starting point for a solution
+	4.Can speed production in a team
+	5.Generally improves system and application design
