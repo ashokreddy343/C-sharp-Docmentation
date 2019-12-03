@@ -1,0 +1,13 @@
+Data abstraction
+	1.It is used to provide the relevant information to the user and hide	
+	  the irrelevant information from the user
+	or
+	2.it is used to provide necessary information to the user and hide
+	  the unnecessary information from the user
+	e.g Console.WriteLine();
+		//hides all the complexility inside this one
+Data Encapsulation
+	1.It is used to group the related data together and hide the complexity
+	  and provide the security to the data/information
+	2.E.g Class
+
