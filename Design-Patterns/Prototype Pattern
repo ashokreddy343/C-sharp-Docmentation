@@ -1,0 +1,14 @@
+Prototype Pattern
+	1.Prototype pattern falls under Creational Pattern of Gang of Four 
+	  (GOF) Design Patterns in .Net.
+	2.It is used to create a duplicate object or clone of the current object.
+	3.It provides an interface for creating parts of a product
+What is Prototype Pattern?
+	1.Prototype design pattern is used to create a duplicate object 
+	  or clone of the current object to enhance performance.
+	2.This pattern is used when the creation of an object is costly or complex.
+	Ex:1.An object is to be created after a costly database operation
+	   2.We can cache the object, returns its clone on next request 
+	     and update the database as and when needed thus reducing database calls.
+
+	3.You can use this pattern when creation of object is very complex or costly.
