@@ -18,6 +18,10 @@ Creational Patterns
 	  in such a way that they can be decoupled from their implementing system
 	2.This provides more flexibility in deciding which objects need to be created 
 	  for a given use case/ scenario. 
+	3.This pattern is used when we need to ensure that only one object of a
+          particular class need to be created
+	2.All further references to the objects are referred to the same underlying instancs
+  	   created
 		1.Abstract factory
 		2.Builder
 		3.Factory method
